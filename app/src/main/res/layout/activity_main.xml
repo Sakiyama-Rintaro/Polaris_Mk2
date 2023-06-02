@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/altitude"
+        android:layout_width="101dp"
+        android:layout_height="387dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="345dp"
+        android:layout_marginEnd="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="93dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="548dp"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/rotation"
+        android:layout_width="93dp"
+        android:layout_height="391dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="341dp"
+        android:layout_marginEnd="285dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </com.github.mikephil.charting.charts.BarChart>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="99dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="281dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="455dp"
+        android:text="STOP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="86dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="637dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="48dp"
+        android:text="RESTART"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/main_text"
+        android:layout_width="404dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="391dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/main_display_button"
+        android:layout_width="73dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="369dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="303dp"
+        android:text="database"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.polaris_mk2.MapsFragment"
+        android:layout_width="421dp"
+        android:layout_height="205dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="517dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
